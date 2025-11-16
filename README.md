@@ -39,18 +39,37 @@ Figure 02  Encoder 8 * 3
 /* write all the steps invloved */
 
 **PROGRAM**
+// Half Subtractor in Verilog
+module half_subtractor (
+    input  wire a, b,         // Inputs
+    output wire diff, borrow  // Outputs
+);
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+    // Logic equations
+    assign diff   = a ^ b;     // XOR for difference
+    assign borrow = ~a & b;    // Borrow when a < b
 
-Developed by: RegisterNumber:
-*/
+endmodule
+
+
+
+
+Developed by:Mugilarasi E
+
+RegisterNumber:25017644
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 111723" src="https://github.com/user-attachments/assets/8ebba120-448e-475b-9291-8f1d3fbbd928" />
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+<img width="1919" height="1079" alt="Screenshot 2025-11-16 111707" src="https://github.com/user-attachments/assets/443648a6-f11b-447a-a59b-67850d9442a1" />
+
+
 
 **RESULTS**
-
+Thus the SISO Shift Register using verilog and validating their functionality using their functional tables is implemented and verified.
 
 
 
