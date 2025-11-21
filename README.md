@@ -77,7 +77,7 @@ RegisterNumber:25017644
 
 
 **RESULTS**
-Thus the SISO Shift Register using verilog and validating their functionality using their functional tables is implemented and verified.
+Thus the encoder4to2 dataflow modelling using verilog and validating their functionality using their functional tables is implemented and verified.
 
 
 
