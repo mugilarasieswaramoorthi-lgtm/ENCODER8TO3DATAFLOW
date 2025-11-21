@@ -36,22 +36,31 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Create a Verilog module with 2 inputs and 4 outputs.
+
+2.Write dataflow logic using assign statements to convert 8-bit input into 3-bit output.
+
+3.Ensure only one input is HIGH at a time.
+
+4.Compile and simulate the design.
+
+5.Verify output using the truth table.
 
 **PROGRAM**
-// Half Subtractor in Verilog
-module half_subtractor (
-    input  wire a, b,         // Inputs
-    output wire diff, borrow  // Outputs
+module encoder4to2 (
+    input  wire [3:0] in,   // 4 input lines
+    output reg  [1:0] out   // 2 output lines
 );
-
-    // Logic equations
-    assign diff   = a ^ b;     // XOR for difference
-    assign borrow = ~a & b;    // Borrow when a < b
-
+    always @(*) begin
+        case (in)
+            4'b0001: out = 2'b00;
+            4'b0010: out = 2'b01;
+            4'b0100: out = 2'b10;
+            4'b1000: out = 2'b11;
+            default: out = 2'bxx;  // Invalid case
+        endcase
+    end
 endmodule
-
-
 
 
 Developed by:Mugilarasi E
@@ -59,13 +68,12 @@ Developed by:Mugilarasi E
 RegisterNumber:25017644
 
 
-**RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+**RTL LOGIC FOR Encoder 4 To 2 in Dataflow Modelling**
+<img width="1920" height="1080" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/b36550f2-d10d-446f-a3e0-e0e6e270c4e7" />
 
 
-
-**TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-
-
+**TIMING DIGRAMS FOR Encoder 4 To 2 in Dataflow Modelling**
+<img width="1920" height="1080" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/f785731b-3b24-4ebb-ac0e-a39399b13351" />
 
 
 **RESULTS**
