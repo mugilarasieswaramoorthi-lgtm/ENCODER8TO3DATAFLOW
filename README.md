@@ -69,11 +69,12 @@ RegisterNumber:25017644
 
 
 **RTL LOGIC FOR Encoder 4 To 2 in Dataflow Modelling**
-<img width="1920" height="1080" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/b36550f2-d10d-446f-a3e0-e0e6e270c4e7" />
+<img width="1920" height="1080" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/f785731b-3b24-4ebb-ac0e-a39399b13351" />
 
 
 **TIMING DIGRAMS FOR Encoder 4 To 2 in Dataflow Modelling**
-<img width="1920" height="1080" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/f785731b-3b24-4ebb-ac0e-a39399b13351" />
+<img width="1920" height="1080" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/b36550f2-d10d-446f-a3e0-e0e6e270c4e7" />
+
 
 
 **RESULTS**
