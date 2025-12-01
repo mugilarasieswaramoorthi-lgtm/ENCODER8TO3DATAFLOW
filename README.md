@@ -1,20 +1,20 @@
-### ENCODER 4TO2 DATAFLOW Modelling
+### ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
-To implement  Encoder 4 To 2 in Dataflow Modelling using verilog and validating their functionality using their functional tables
+To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
 
 **SOFTWARE REQUIRED:** Quartus prime
 
 **THEORY**
 
-**Encoder 4 To 2**
+**Encoder 8 To 3**
 
 The 8 to 3 line Encoder is also known as Octal to Binary Encoder. In 8 to 3 line encoder, there is a total of eight inputs, i.e., D0, D1, D2, D3, D4, D5, D6, and D7 and three outputs, i.e., A0, A1, and A2. In 8-input lines, one input-line is set to true at a time to get the respective binary code in the output side. Below are the block diagram and the truth table of the 8 to 3 line encoder.
 
 ![image](https://github.com/naavaneetha/ENCODER8TO3DATAFLOW/assets/154305477/0bc242c1-eb9e-4c47-afe5-30428470efc3)
 
-Figure 01  Block Diagram of Encoder 4 * 2
+Figure 01  Block Diagram of Encoder 8 * 3
 
 **Truth Table**
 
@@ -32,7 +32,7 @@ Logical circuit of the above expressions is given below:
 
 ![image](https://github.com/naavaneetha/ENCODER8TO3DATAFLOW/assets/154305477/95acaee6-c873-4c75-89eb-ef09fb158053)
 
-Figure 02  Encoder 4 * 2
+Figure 02  Encoder 8 * 3
 
 **Procedure**
 
@@ -47,7 +47,7 @@ Figure 02  Encoder 4 * 2
 5.Verify output using the truth table.
 
 **PROGRAM**
-module encoder4to2 (
+module encoder8to3 (
     input  wire [3:0] in,   // 4 input lines
     output reg  [1:0] out   // 2 output lines
 );
@@ -68,17 +68,18 @@ Developed by:Mugilarasi E
 RegisterNumber:25017644
 
 
-**RTL LOGIC FOR Encoder 4 To 2 in Dataflow Modelling**
-<img width="1920" height="1080" alt="Screenshot (60)" src="https://github.com/user-attachments/assets/f785731b-3b24-4ebb-ac0e-a39399b13351" />
+**RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+<img width="1920" height="1080" alt="Screenshot (67)" src="https://github.com/user-attachments/assets/e25cfc24-67c4-4456-8e8a-114c18373967" />
 
 
-**TIMING DIGRAMS FOR Encoder 4 To 2 in Dataflow Modelling**
-<img width="1920" height="1080" alt="Screenshot (61)" src="https://github.com/user-attachments/assets/b36550f2-d10d-446f-a3e0-e0e6e270c4e7" />
+
+**TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+<img width="1920" height="1080" alt="Screenshot (68)" src="https://github.com/user-attachments/assets/a90003fa-1040-40f6-82bc-6d1e512cbdc8" />
 
 
 
 **RESULTS**
-Thus the encoder4to2 dataflow modelling using verilog and validating their functionality using their functional tables is implemented and verified.
+Thus the encoder 8to3 dataflow modelling using verilog and validating their functionality using their functional tables is implemented and verified.
 
 
 
